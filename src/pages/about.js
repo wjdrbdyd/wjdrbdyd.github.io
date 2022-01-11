@@ -57,6 +57,7 @@ export const pageQuery = graphql`
           }
 
           projects {
+            date
             title
             description
             techStack

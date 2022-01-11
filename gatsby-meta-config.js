@@ -14,7 +14,7 @@ module.exports = {
     name: `정규용`,
     bio: {
       role: `개발자`,
-      description: ['나는 정규용이야', '민둉아', '사랑해'],
+      description: ['정규용 입니다.'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
@@ -40,15 +40,26 @@ module.exports = {
           demo: '',
         },
       },
+      {
+        date: '2019.04 ~ 2021.08 매트릭스투비',
+        activity: '수출입 솔루션 개발',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
       // ========================================================
       // ========================================================
       {
-        date: '2022.01 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2022.01',
+        activity: '개인 블로그 개발 시작',
         links: {
           post: '/gatsby-starter-zoomkoding-introduction',
           github: 'https://github.com/wjdrbdyd/wjdrbdyd.github.io.git',
-          demo: 'https://www.zoomkoding.com',
+          demo: '',
         },
       },
     ],
@@ -57,6 +68,7 @@ module.exports = {
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
+        date: '',
         title: '',
         description: '',
         techStack: ['', ''],
@@ -72,17 +84,57 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '개발 블로그 테마 개발',
+        date: '2019.08 ~ 2020.02',  
+        title: '2020년도 관세청 블록체인 수출입솔루션 개발',
         description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
+          '프로젝트 내에서 수출입 솔루션 개발 담당',
+        techStack: ['Egovframework3.0', 'Java', 'JavaScript','Tibero-SQL', 'HTML', 'CSS'],
+        thumbnailUrl: '',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: '',
+          demo: '',
         },
       },
+      {
+        date: '2020.04 ~ 2020.08',  
+        title: '신세계I&C 모의해킹 및 수입 솔루션 개발',
+        description:
+          '모의해킹 취약점 해결 및 추가 수입 업무 페이지 개발',
+          techStack: ['Java', 'JavaScript', 'Oracle-SQL','PL-SQL', 'HTML', 'CSS', 'Burp Suite', 'FindBug', 'PMD'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          demo: '',
+        },
+      },
+      {
+        date: '2020.08 ~ 2020.11',  
+        title: 'CJ제일제당 수출입 솔루션 개발',
+        description:
+          'CJ제일제당 수출입 솔루션 개발',
+          techStack: ['Java', 'JavaScript', 'Oracle-SQL','PL-SQL', 'HTML', 'CSS', 'FindBug', 'PMD'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          demo: '',
+        },
+      }, 
+      {
+        date: '2021.03 ~ 2021.08',  
+        title: '솔브레인 수출입 솔루션 개발',
+        description:
+          '솔브레인 수출솔루션 개발 및 UbiReport 수출 및 수입 리포트 개발',
+          techStack: ['SpringFramework','Java', 'JavaScript', 'MS-SQL', 'HTML', 'CSS', 'FindBug', 'PMD'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          demo: '',
+        },
+      }, 
     ],
   },
 };

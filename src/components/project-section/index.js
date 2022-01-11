@@ -12,6 +12,7 @@ function ProjectSection({ projects }) {
       {projects.map((project, index) =>
         index === 0 ? null : (
           <div className="project" key={index}>
+            <p className="date">{project.date}</p>
             <div className="head">
               {project.title}&nbsp;&nbsp;
               {project.links && (

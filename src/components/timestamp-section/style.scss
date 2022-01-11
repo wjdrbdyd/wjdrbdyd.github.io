@@ -70,3 +70,17 @@
     }
   }
 }
+
+.date {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 115px;
+  min-width: 115px;
+  color: #828282;
+  align-self: left;
+
+  @include md {
+    width: 200px;
+    min-width: 200px;
+  }
+}

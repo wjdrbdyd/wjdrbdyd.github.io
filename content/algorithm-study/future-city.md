@@ -29,45 +29,65 @@ categories: 알고리즘 다이나믹프로그래밍
 아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
 
 > ## 예제입력 1
-    5
-     7
-     3 8
-     8 1 0
-     2 7 4 4
-     4 5 2 6 5
+    5 7
+     1 2
+     1 3
+     1 4
+     2 4
+     3 4
+     3 5
+     4 5
+     4 5
 > ## 예제 출력 1
     30   
 
 <br/>
 
 > ## 접근
-1. dp문제 -> 점화식 
-1. 이전 행의 왼쪽 숫자와 오른쪽 숫자 중 큰 숫자를 현재 나와 더한다. 현재데이터 = max(이전행 왼쪽숫자, 이전행 오른쪽숫자)
-1. 점화식
-  * data[i][j] += max(data[i - 1][j - 1], data[i - 1][j])
+1. N범위 100이하 -> 최단거리 플로이드 워셜
+2. 플로이드 워셜 점화식
+  * Dab = min(Dab, Dak + Dkb)
+
+> ## 오답
+플로이드 워셜 접근은 했으나 주어진 문제가 양방향 그래프란점을 간과하고 코드 작성 하였음. 문제를 그림으로 그려보고 풀어보는 습관 가지도록 하자.
 
 <br/>
 
 > ## 풀이 코드 
 ```python
-n = int(input())
-data = []
-for i in range(n):
-  data.append(list(map(int, input().split())))
+INF = int(1e9)
+n, m = map(int, input().split())
+# 데이터 무한으로 초기화
+graph = [[INF] * (n + 1) for _ in range(n + 1)]
 
-for i in range(1, n):
-  for j in range(i + 1):
-    # 오른쪽에서만 올때 
-    if j == 0 :
-      data[i][j] += data[i - 1][j]
-    # 왼쪽에서만 올때
-    elif j == i :
-      data[i][j] += data[i - 1][j - 1]
-    # 오른쪽인지 왼쪽인지 판단해야할 때
-    else :
-      data[i][j] += max(data[i - 1][j - 1], data[i - 1][j])
-        
-print(max(data[n -1]))
+# 문제에서 요구하는 점화식
+# Dxk 
+# 자기 자신 비용 0
+for a in range(1, n + 1):
+  for b in range(1, n + 1):
+    if a == b :
+      graph[a][b] = 0
+
+# 거리 초기 값 입력
+for _ in range(1, m + 1):
+  a, b = map(int, input().split())
+  graph[a][b] = 1
+  graph[b][a] = 1
+
+x, y = map(int, input().split())
+
+for k in range(1, n + 1):
+  for a in range(1, n + 1):
+    for b in range(1, n + 1):
+      graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+
+print(graph)
+
+result = graph[1][k] + graph[k][x]
+if result >= INF:
+  print(-1)
+else:
+  print(result)
 ```
 
 <br/>

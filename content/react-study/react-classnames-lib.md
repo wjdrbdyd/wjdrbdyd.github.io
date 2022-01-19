@@ -1,22 +1,27 @@
 ---
 emoji: 🧢
-title: "[React] React classnames lib"
+title: "[React] React Basic"
 date: '2022-01-19 02:00:00'
 author: 정굥
 tags: blog react
 categories: React
 ---
+## A. React - Life Cycle 
+![reactLifeCycle](./react-lifecycle.jpg)
 
-# classnames
-## 서로 다른 효과를 갖고 있는 css를 하나의 컴포넌트에 적용하는데 사용.
-## 1. 설치
+### 1. componentDidMount()
+* 컴포넌트가 만들어지고 첫 렌더링 마친 후 호출되는 함수
+* setTimeout, setInterval 및 AJAX 처리.
+## B. classnames
+* 서로 다른 효과를 갖고 있는 css를 하나의 컴포넌트에 적용하는데 사용.
+### 1. 설치
 ```bash
 $ yarn add classnames
 ```
 
 <br/>
 
-## 2. 사용법
+### 2. 사용법
 ```javascript
 import React, {Component} from 'react';
 import classnames  from 'classnames/bind';

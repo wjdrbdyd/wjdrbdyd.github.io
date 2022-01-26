@@ -25,7 +25,7 @@ categories: HTMLCSS
 
 <br />
 
-## 2. 강의 #2.1 ~ #2.11
+## 2. 강의 #2.0 ~ #2.11
 * 폴더명, 파일명은 항상 소문자로 생성 해야한다.
 * `VSC` 확장 프로그램 설치
 1. Community Material Theme 
@@ -35,7 +35,7 @@ categories: HTMLCSS
 ㅤ`ctrl + ,` 설정에서 `editor` 검색 -> `Format On Save` 체크
 ### 태그 참조 [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-## 3. 강의 #3.1 ~ #3.19
+## 3. 강의 #3.0 ~ #3.19
 * CSS - Cascading Style Sheet(CSS) 위에 있는 코드 부터 차례로 적용.
 ### block(box) <-> inline 
 * 옆에 다른 요소가 올 수 없는 걸 `block`, 올 수 있는 건 `inline` 이라 한다. 

@@ -1,128 +1,116 @@
 ---
 emoji: 🧢
 title: "[React] 리액트 Hooks#1"
-date: '2022-01-30 02:00:00'
+date: '2022-01-28 01:00:00'
 author: 정굥
 tags: blog react
 categories: React
 ---
 
-# 보류 상태
-## 1.
-<!-- # [노마드코더 - 실전형 리액트 Hooks 10개](https://nomadcoders.co/react-hooks-introduction/lobby)
 
-## What is Firebase? 
-  
-## 노트
-### 1. useEffect 이용한 create, destroy 
-* Component가 생성될 때 코드 실행(create) 및 파괴될 때 코드 실행(destroy) 
-```javascript
-  useEffect(() => {
-    console.log("created :)");
-    return () => console.log("destroy :(");
-  });
-```
+# [노마드코더 - 실전형 리액트 Hooks 10개](https://nomadcoders.co/react-hooks-introduction/lobby)
+## React Hooks Intro
+* functional component에서 state을 가질 수 있게 한다.
+* 함수형 프로그래밍 스타일 !
 
+> 기존 리액트 스타일 예시 
 ```javascript
-  function destroyFn() {
-    console.log("destroy :(");
+import React, {Component} from "react";
+
+class App extends Component {
+  state = {
+    count:0
+  };
+  modify = n => {
+    this.setState(current => {
+      return {
+        count: n
+      };
+    });
+  };
+  inc
+  render() {
+    const { count } = this.state;
+    return <><div>{ count }</div><button onClick={() => this.modify(count + 1)}>Increment</button></>
   }
-  function createFn() {
-    console.log("created :)");
-    return destroyFn;
-  }
-  useEffect(createFn, []);
-
-```
-
-<br/>
-
-### 2. API 사용법 
-* ajax & coin API 사용 
->문제점
-**`fetch("https://api.coinpaprika.com/v1/tickers")`로 가져온 데이터가 6000 몇개 쯤? 되는데**
-**데이터를 천개 정도까지 잘라서 입력했을 때 USD-> 선택된 Coin 수량 변경시 잘되는데 2천개정도부터**
-**버벅이는 현상이 나타남. 정확한 원인은 아직 모르겠으나 숫자를 입력했을 때 onchange 이벤트가 계속 발생하여** 
-**그 속도가 6천개의 데이터를 그려주는 속도보다 빨라서 버벅이는걸로 예상이됨.**
-[소스참조](https://github.com/wjdrbdyd/movie-web/coin-exam)
-> 예상 해결 방안 
-- 1. 페이징을 사용하여 데이터를 나눠서 렌더링 하는 방법.
-- 2. 스크롤위치에 따라 데이터를 나눠서 렌더링 하는 방법.
-- 3. input 입력시 onChange발생하여 setMoney를 실행할 때 setTimeout을 줘서 렌더링 시간에 격차를 두는방법.
-
-<br/>
-
-### 3. fetch & async-await 
-> fetch
+}
+```  
+> 리액트 훅 사용 예시
 ```javascript
-fetch(
-  "https://yts.mx/api/v2/list_movies.json?minimum_rating=8.0&sort_by=year"
-)
-.then((response) => response.json())
-.then((json) => {
-  setMovies(json.data.movies);
-  setLoading(false);
-});
-```
-> async-await 
-```javascript
-const getMovies = async() => {
-  const response = await fetch(
-    "https://yts.mx/api/v2/list_movies.json?minimum_rating=8.0&sort_by=year"
-  );
-  const json = await response.json();
-  setMovies(json.data.movies);
-  setLoading(false);
+import React, { useState } from "react";
+
+const App = () => {
+  const [count, setCount] = useState(0); 
+  return (
+    <>
+      {count}
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </>
+  )
 }
 ```
-### 4. Movie Component props 전달시 에러
-* `Uncaught TypeError: Cannot read properties of undefined` 에러 발생
-* 발생지점 `genre` 부분 map 함수 undefined
-**제공하는 API의 `genre`의 속성이 없는 데이터 존재** 
 
-* 컴포넌트안에서 `genre` 유무를 체크하니 props 전달시 propTypes 설정해놔서 Script Error발생 함 
-**그래서 부모컴포넌트에서 genres가 없을 경우 빈 Array 전달하도록 변경**
-> 해결
+### 참조-[리액트 훅 Docs](https://reactjs.org/docs/hooks-intro.html)
+
+<br/>
+
+**처음 배울 때 훅 사용하지 않은걸 배웠고 나중에 배운건 훅 사용한거였는데**
+**그냥 뭐 더 쉽게 바뀐거지 하고 사용만 했지 왜 이렇게 바뀐지는 생각안해봤는데**
+**바뀐 배경을 들으니까 리액트가 더 재밌어지는 중이다.**
+
+# 노트
+## #1. useState
+### #1.0 useState (위의 상단 내용)
+### #1.1 ~ 1.2 useInput
+* 기본적인 Input 업데이트
+* [React Doc](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes)에 따르면 props 객체를 전달하는 Spread 연산자를 사용하여 props 속성을 확산하여 JSX에서 전달할 수 있다고 나와있다.
 ```javascript
- Movie.propTypes = {
-  ...
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired // genres의 Type 설정 부분
-};
- // 문제의 부분
- <Movie key={movie.id}coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} 
- `genres={movie.genres}` /> 
- 
- // 문제 부분 수정
- <Movie key={movie.id}coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} 
- `genres={movie.genres ? movie.genres: []}` /> 
-```
-[소스참조](https://github.com/wjdrbdyd/movie-web)
+const useInput = (initialValue, validator) => {
+  const [value, setValue] = useState(initialValue);
+  const onChange = event => {
+    const {
+      target: {value}
+    } = event;
 
-### 5.깃페이지 배포시 빈화면 문제
-**작년 11월경 혼자 리액트를 공부해서 간단한 프로젝트를 배포했을 때 사이트를 들어가면 빈 화면으로 출력되는 문제를 겪었었다.**
-**아무리 찾아봐도 당시에는 커뮤니티 활동도 안하고 구글링 열심히 검색해서 혼자의 힘으로 해결하려 했었으나 실패.. 그때 아마 리액트**
-**개인 프로젝트를 만들다가 잠깐 Stop했던 기억이.. 운좋게 이번에 이 노마드 강의를 들으며 강의의 댓글로 인해 원인은 알게 되었다.**
-> 문제가 됬던 부분 `React-Router-Dom v6.` 사용
-```jsx
-// v6 이전
-<Router>
-  <Switch>
-    <Route path="/movie/:id"><Detail/></Route>
-    <Route path="/"><Home/></Route>
-  </Switch>
-</Router>
-// 라우터 v6
-<Router>
-  <Routes>
-    <Route path="/movie/:id" element={<Detail />}></Route>
-    <Route path="/" element={<Home />}></Route>
-  </Routes>
-</Router>
+    let willUpdate  = true;
+    if (typeof validator === "function") {
+      willUpdate = validator(value);
+    }
+    if (willUpdate) {
+      setValue(value);
+    }
+  
+  };
+  return { value, onChange };
+};
+export default function App() {
+  const maxLen = value => value.length <= 10;  // 길이 체크
+  // const containStr = value => !value.includes("@");
+  const name = useInput("Mr. Jung", maxLen);
+
+  return (
+    <div className="App">
+      // <input placeholder="name" value={name.value} onChange={name.onChange} />
+      <input placeholder="name" {...name} />
+    </div>
+  );
+}
 ```
-**위 소스코드에서 `<Router>`  부분에 `basename={process.env.PUBLIC_URL}` 을 추가하면 빈 화면 증상을 해결할 수 있다.**
-**무슨의미인지는 아직 찾아보지 않았음. `process.env.PULBIC_URL` 을 콘솔로 출력해보면 프로젝트 루트 폴더명이 나오는데**
-**v6 버전부터 저부분을 추가해야 루트 경로를 잡을 수 있는 듯한??.. 추후 내용을 찾아보고 해당 글에 추가할 예정!**
-<br/> -->
+### #1.3 useTabs
+* 공부한 소스는 깃허브 업로드 예정
+
+## #2. useEffect
+### #2.0 useEffect
+* `componentWillUnmount`, `componentDidMount`, `componentDidUpdate`의 역할을 한다.
+```javascript
+
+// 첫 번째 인자 - function으로 componentDidMount() 와 비슷
+// 두 번째 인자 - dependency
+// dependency 값이 변할 때 실행 된다. componentDidUpdate() 와 비슷
+useEffect(()=>{}, [])
+```
+
+<br/>
 
 - [React](/posts/React)
   

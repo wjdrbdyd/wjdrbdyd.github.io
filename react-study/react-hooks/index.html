@@ -64,127 +64,134 @@
         }
       }
     })
-  </script><title data-react-helmet="true">[React] 리액트 Hooks#1</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="[React] 리액트 Hooks#1"/><meta data-react-helmet="true" property="og:site_title" content="[React] 리액트 Hooks#1"/><meta data-react-helmet="true" name="description" content="보류 상태 1. React 1."/><meta data-react-helmet="true" property="og:description" content="보류 상태 1. React 1."/><meta data-react-helmet="true" property="og:author" content="정규용"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-f6c8a8bac0fead7a5109.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-eb10ce978877bae731c6.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-5eed9cfe0fd4d67b7652.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/react-study/react-hooks/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/about">정굥 개발일기</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🧢</div><div class="info"><div class="categories"><a class="category" href="/posts/React">React</a></div></div><h1 class="title">[React] 리액트 Hooks#1</h1><div class="info"><div class="author">posted by <strong>정굥</strong>,</div> <!-- -->January 30, 2022</div></header><div class="post-content"><div class="markdown"><h1 id="보류-상태" style="position:relative;"><a href="#%EB%B3%B4%EB%A5%98-%EC%83%81%ED%83%9C" aria-label="보류 상태 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>보류 상태</h1>
-<h2 id="1" style="position:relative;"><a href="#1" aria-label="1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.</h2>
-<!-- # [노마드코더 - 실전형 리액트 Hooks 10개](https://nomadcoders.co/react-hooks-introduction/lobby)
+  </script><title data-react-helmet="true">[React] 리액트 Hooks#1</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="[React] 리액트 Hooks#1"/><meta data-react-helmet="true" property="og:site_title" content="[React] 리액트 Hooks#1"/><meta data-react-helmet="true" name="description" content="노마드코더 - 실전형 리액트 Hooks 10개 React Hooks Intro functional component에서 state을 가질 수 있게 한다. 함수형 프로그래밍 스타일 ! 기존 리액트 스타일 예시 리액트 훅 사용 예시 참조-리액트 훅 Docs 처음 배울 때 훅 사용하지 않은걸 배웠고 나중에 배운건 훅 사용한거였는데
+그냥 뭐 더 쉽게 바뀐거지 하고 사용만 했지 왜 이렇게 바뀐지는 생각안해봤는데
+바뀐 배경을 들으니까 리액트가 더 재밌어지는 중이다. 노트 #1. useState #1.0 useState (위의 상단 내용) #1.1 ~ 1.2 useInput 기본적인 Input 업데이트 React Doc에 따르면 props 객체를 전달하는 Spread 연산자를 사용하여 props 속성을 확산하여 JSX에서 전달할 수 있다고 나와있다. #1.3 useTabs 공부한 소스는 깃허브 업로드 예정 #2. useEffect #2.0 useEffect , , 의 역할을 한다. Reac…"/><meta data-react-helmet="true" property="og:description" content="노마드코더 - 실전형 리액트 Hooks 10개 React Hooks Intro functional component에서 state을 가질 수 있게 한다. 함수형 프로그래밍 스타일 ! 기존 리액트 스타일 예시 리액트 훅 사용 예시 참조-리액트 훅 Docs 처음 배울 때 훅 사용하지 않은걸 배웠고 나중에 배운건 훅 사용한거였는데
+그냥 뭐 더 쉽게 바뀐거지 하고 사용만 했지 왜 이렇게 바뀐지는 생각안해봤는데
+바뀐 배경을 들으니까 리액트가 더 재밌어지는 중이다. 노트 #1. useState #1.0 useState (위의 상단 내용) #1.1 ~ 1.2 useInput 기본적인 Input 업데이트 React Doc에 따르면 props 객체를 전달하는 Spread 연산자를 사용하여 props 속성을 확산하여 JSX에서 전달할 수 있다고 나와있다. #1.3 useTabs 공부한 소스는 깃허브 업로드 예정 #2. useEffect #2.0 useEffect , , 의 역할을 한다. Reac…"/><meta data-react-helmet="true" property="og:author" content="정규용"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-f6c8a8bac0fead7a5109.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-eb10ce978877bae731c6.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-5eed9cfe0fd4d67b7652.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/react-study/react-hooks/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/about">정굥 개발일기</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🧢</div><div class="info"><div class="categories"><a class="category" href="/posts/React">React</a></div></div><h1 class="title">[React] 리액트 Hooks#1</h1><div class="info"><div class="author">posted by <strong>정굥</strong>,</div> <!-- -->January 28, 2022</div></header><div class="post-content"><div class="markdown"><h1 id="노마드코더---실전형-리액트-hooks-10개" style="position:relative;"><a href="#%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94---%EC%8B%A4%EC%A0%84%ED%98%95-%EB%A6%AC%EC%95%A1%ED%8A%B8-hooks-10%EA%B0%9C" aria-label="노마드코더   실전형 리액트 hooks 10개 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://nomadcoders.co/react-hooks-introduction/lobby">노마드코더 - 실전형 리액트 Hooks 10개</a></h1>
+<h2 id="react-hooks-intro" style="position:relative;"><a href="#react-hooks-intro" aria-label="react hooks intro permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>React Hooks Intro</h2>
+<ul>
+<li>functional component에서 state을 가질 수 있게 한다.</li>
+<li>함수형 프로그래밍 스타일 !</li>
+</ul>
+<blockquote>
+<p>기존 리액트 스타일 예시</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
 
-## What is Firebase? 
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token operator">:</span><span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token function-variable function">modify</span> <span class="token operator">=</span> <span class="token parameter">n</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token parameter">current</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        count<span class="token operator">:</span> n
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  inc
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span><span class="token operator">></span><span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token punctuation">{</span> count <span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">modify</span><span class="token punctuation">(</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>Increment<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<blockquote>
+<p>리액트 훅 사용 예시</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>count<span class="token punctuation">,</span> setCount<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span><span class="token operator">></span>
+      <span class="token punctuation">{</span>count<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setCount</span><span class="token punctuation">(</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>Increment<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3 id="참조-리액트-훅-docs" style="position:relative;"><a href="#%EC%B0%B8%EC%A1%B0-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85-docs" aria-label="참조 리액트 훅 docs permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참조-<a href="https://reactjs.org/docs/hooks-intro.html">리액트 훅 Docs</a></h3>
+<br/>
+<p><strong>처음 배울 때 훅 사용하지 않은걸 배웠고 나중에 배운건 훅 사용한거였는데</strong>
+<strong>그냥 뭐 더 쉽게 바뀐거지 하고 사용만 했지 왜 이렇게 바뀐지는 생각안해봤는데</strong>
+<strong>바뀐 배경을 들으니까 리액트가 더 재밌어지는 중이다.</strong></p>
+<h1 id="노트" style="position:relative;"><a href="#%EB%85%B8%ED%8A%B8" aria-label="노트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>노트</h1>
+<h2 id="1-usestate" style="position:relative;"><a href="#1-usestate" aria-label="1 usestate permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#1. useState</h2>
+<h3 id="10-usestate-위의-상단-내용" style="position:relative;"><a href="#10-usestate-%EC%9C%84%EC%9D%98-%EC%83%81%EB%8B%A8-%EB%82%B4%EC%9A%A9" aria-label="10 usestate 위의 상단 내용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#1.0 useState (위의 상단 내용)</h3>
+<h3 id="11--12-useinput" style="position:relative;"><a href="#11--12-useinput" aria-label="11  12 useinput permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#1.1 ~ 1.2 useInput</h3>
+<ul>
+<li>기본적인 Input 업데이트</li>
+<li><a href="https://reactjs.org/docs/jsx-in-depth.html#spread-attributes">React Doc</a>에 따르면 props 객체를 전달하는 Spread 연산자를 사용하여 props 속성을 확산하여 JSX에서 전달할 수 있다고 나와있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">useInput</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">initialValue<span class="token punctuation">,</span> validator</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>value<span class="token punctuation">,</span> setValue<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span>initialValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onChange</span> <span class="token operator">=</span> <span class="token parameter">event</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      target<span class="token operator">:</span> <span class="token punctuation">{</span>value<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> event<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> willUpdate  <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> validator <span class="token operator">===</span> <span class="token string">"function"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      willUpdate <span class="token operator">=</span> <span class="token function">validator</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>willUpdate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">setValue</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
   
-## 노트
-### 1. useEffect 이용한 create, destroy 
-* Component가 생성될 때 코드 실행(create) 및 파괴될 때 코드 실행(destroy) 
-```javascript
-  useEffect(() => {
-    console.log("created :)");
-    return () => console.log("destroy :(");
-  });
-```
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> value<span class="token punctuation">,</span> onChange <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">maxLen</span> <span class="token operator">=</span> <span class="token parameter">value</span> <span class="token operator">=></span> value<span class="token punctuation">.</span>length <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span>  <span class="token comment">// 길이 체크</span>
+  <span class="token comment">// const containStr = value => !value.includes("@");</span>
+  <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token function">useInput</span><span class="token punctuation">(</span><span class="token string">"Mr. Jung"</span><span class="token punctuation">,</span> maxLen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-```javascript
-  function destroyFn() {
-    console.log("destroy :(");
-  }
-  function createFn() {
-    console.log("created :)");
-    return destroyFn;
-  }
-  useEffect(createFn, []);
-
-```
-
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"App"</span><span class="token operator">></span>
+      <span class="token comment">// &lt;input placeholder="name" value={name.value} onChange={name.onChange} /></span>
+      <span class="token operator">&lt;</span>input placeholder<span class="token operator">=</span><span class="token string">"name"</span> <span class="token punctuation">{</span><span class="token operator">...</span>name<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3 id="13-usetabs" style="position:relative;"><a href="#13-usetabs" aria-label="13 usetabs permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#1.3 useTabs</h3>
+<ul>
+<li>공부한 소스는 깃허브 업로드 예정</li>
+</ul>
+<h2 id="2-useeffect" style="position:relative;"><a href="#2-useeffect" aria-label="2 useeffect permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#2. useEffect</h2>
+<h3 id="20-useeffect" style="position:relative;"><a href="#20-useeffect" aria-label="20 useeffect permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>#2.0 useEffect</h3>
+<ul>
+<li><code class="language-text">componentWillUnmount</code>, <code class="language-text">componentDidMount</code>, <code class="language-text">componentDidUpdate</code>의 역할을 한다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">
+<span class="token comment">// 첫 번째 인자 - function으로 componentDidMount() 와 비슷</span>
+<span class="token comment">// 두 번째 인자 - dependency</span>
+<span class="token comment">// dependency 값이 변할 때 실행 된다. componentDidUpdate() 와 비슷</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
 <br/>
-
-### 2. API 사용법 
-* ajax & coin API 사용 
->문제점
-**`fetch("https://api.coinpaprika.com/v1/tickers")`로 가져온 데이터가 6000 몇개 쯤? 되는데**
-**데이터를 천개 정도까지 잘라서 입력했을 때 USD-> 선택된 Coin 수량 변경시 잘되는데 2천개정도부터**
-**버벅이는 현상이 나타남. 정확한 원인은 아직 모르겠으나 숫자를 입력했을 때 onchange 이벤트가 계속 발생하여** 
-**그 속도가 6천개의 데이터를 그려주는 속도보다 빨라서 버벅이는걸로 예상이됨.**
-[소스참조](https://github.com/wjdrbdyd/movie-web/coin-exam)
-> 예상 해결 방안 
-- 1. 페이징을 사용하여 데이터를 나눠서 렌더링 하는 방법.
-- 2. 스크롤위치에 따라 데이터를 나눠서 렌더링 하는 방법.
-- 3. input 입력시 onChange발생하여 setMoney를 실행할 때 setTimeout을 줘서 렌더링 시간에 격차를 두는방법.
-
-<br/>
-
-### 3. fetch & async-await 
-> fetch
-```javascript
-fetch(
-  "https://yts.mx/api/v2/list_movies.json?minimum_rating=8.0&sort_by=year"
-)
-.then((response) => response.json())
-.then((json) => {
-  setMovies(json.data.movies);
-  setLoading(false);
-});
-```
-> async-await 
-```javascript
-const getMovies = async() => {
-  const response = await fetch(
-    "https://yts.mx/api/v2/list_movies.json?minimum_rating=8.0&sort_by=year"
-  );
-  const json = await response.json();
-  setMovies(json.data.movies);
-  setLoading(false);
-}
-```
-### 4. Movie Component props 전달시 에러
-* `Uncaught TypeError: Cannot read properties of undefined` 에러 발생
-* 발생지점 `genre` 부분 map 함수 undefined
-**제공하는 API의 `genre`의 속성이 없는 데이터 존재** 
-
-* 컴포넌트안에서 `genre` 유무를 체크하니 props 전달시 propTypes 설정해놔서 Script Error발생 함 
-**그래서 부모컴포넌트에서 genres가 없을 경우 빈 Array 전달하도록 변경**
-> 해결
-```javascript
- Movie.propTypes = {
-  ...
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired // genres의 Type 설정 부분
-};
- // 문제의 부분
- <Movie key={movie.id}coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} 
- `genres={movie.genres}` /> 
- 
- // 문제 부분 수정
- <Movie key={movie.id}coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} 
- `genres={movie.genres ? movie.genres: []}` /> 
-```
-[소스참조](https://github.com/wjdrbdyd/movie-web)
-
-### 5.깃페이지 배포시 빈화면 문제
-**작년 11월경 혼자 리액트를 공부해서 간단한 프로젝트를 배포했을 때 사이트를 들어가면 빈 화면으로 출력되는 문제를 겪었었다.**
-**아무리 찾아봐도 당시에는 커뮤니티 활동도 안하고 구글링 열심히 검색해서 혼자의 힘으로 해결하려 했었으나 실패.. 그때 아마 리액트**
-**개인 프로젝트를 만들다가 잠깐 Stop했던 기억이.. 운좋게 이번에 이 노마드 강의를 들으며 강의의 댓글로 인해 원인은 알게 되었다.**
-> 문제가 됬던 부분 `React-Router-Dom v6.` 사용
-```jsx
-// v6 이전
-<Router>
-  <Switch>
-    <Route path="/movie/:id"><Detail/></Route>
-    <Route path="/"><Home/></Route>
-  </Switch>
-</Router>
-// 라우터 v6
-<Router>
-  <Routes>
-    <Route path="/movie/:id" element={<Detail />}></Route>
-    <Route path="/" element={<Home />}></Route>
-  </Routes>
-</Router>
-```
-**위 소스코드에서 `<Router>`  부분에 `basename={process.env.PUBLIC_URL}` 을 추가하면 빈 화면 증상을 해결할 수 있다.**
-**무슨의미인지는 아직 찾아보지 않았음. `process.env.PULBIC_URL` 을 콘솔로 출력해보면 프로젝트 루트 폴더명이 나오는데**
-**v6 버전부터 저부분을 추가해야 루트 경로를 잡을 수 있는 듯한??.. 추후 내용을 찾아보고 해당 글에 추가할 예정!**
-<br/> -->
 <ul>
 <li><a href="/posts/React">React</a></li>
 </ul>
 <div class="table-of-contents">
 <ul>
-<li><a href="#1">1.</a></li>
+<li>
+<p><a href="#react-hooks-intro">React Hooks Intro</a></p>
+<ul>
+<li><a href="#%EC%B0%B8%EC%A1%B0-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85-docs">참조-리액트 훅 Docs</a></li>
 </ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/react-study/twitter-clone-1/"><div class="direction">이전 글</div><div class="title">[React] 트위터 클론코딩#1</div></a></div><div class="post-navigator-card-wrapper"></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://www.github.com">정규용</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/react-study/react-hooks/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-eb10ce978877bae731c6.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-3d8b8b97efdb6779fea8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-5eed9cfe0fd4d67b7652.js" async=""></script><script src="/app-eb10ce978877bae731c6.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-f6c8a8bac0fead7a5109.js" async=""></script></body></html>
+</li>
+<li>
+<p><a href="#1-usestate">#1. useState</a></p>
+<ul>
+<li><a href="#10-usestate-%EC%9C%84%EC%9D%98-%EC%83%81%EB%8B%A8-%EB%82%B4%EC%9A%A9">#1.0 useState (위의 상단 내용)</a></li>
+<li><a href="#11--12-useinput">#1.1 ~ 1.2 useInput</a></li>
+<li><a href="#13-usetabs">#1.3 useTabs</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#2-useeffect">#2. useEffect</a></p>
+<ul>
+<li><a href="#20-useeffect">#2.0 useEffect</a></li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/html-css/kokoat-clone-3/"><div class="direction">이전 글</div><div class="title">[HTML/CSS] 코코아톡 클론코딩#3</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/react-study/react-hooks-2/"><div class="direction">다음 글</div><div class="title">[React] 리액트 Hooks#2</div></a></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://www.github.com">정규용</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/react-study/react-hooks/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-eb10ce978877bae731c6.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-3d8b8b97efdb6779fea8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-5eed9cfe0fd4d67b7652.js" async=""></script><script src="/app-eb10ce978877bae731c6.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-f6c8a8bac0fead7a5109.js" async=""></script></body></html>

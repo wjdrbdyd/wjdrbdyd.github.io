@@ -17,7 +17,7 @@ categories: React
 * element를 클릭 하는 기능을 넣을 때 사용하는 hook
    reference - component의 어떤 부분을 선택할 수 있는 방법
    `useRef` document.getElementById 같은 기능
-   > 사용 예시
+> 사용 예시
 ```javascript
 const inputRef = useRef() 
 console.log(inputRef) // 값 확인

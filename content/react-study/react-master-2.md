@@ -59,7 +59,7 @@ function App() {
 
 > 캐시데이터 확인
 * App.tsx에 아래 코드를 추가하면 캐싱 데이터 확인 쉽게 가능.
-```typescript
+```javascript
 import { ReactQueryDevtools } from "react-query/devtools";  
 <ReactQueryDevtools initialIsOpen={true} />
 ```

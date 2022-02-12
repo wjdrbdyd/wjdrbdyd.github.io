@@ -27,7 +27,7 @@ $ npm install typescript @types/node @types/react @types/react-dom @types/jest
 ```bash
 $ npm install --save firebase
 ```
-* firebase.js 추가
+* firebase.js 추가 -> fbase.js (절대경로 import로 설정했더니 firebase랑 충돌나서 파일명 변경)
 ```javascript
 import { initializeApp } from "firebase/app";
 
@@ -52,13 +52,48 @@ export default app
 ```
 REACT_APP_API_KEY= ...
 ```
-* firebase.js
+* firebase.ts
 ```javascript
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   ...
 }
 ```
+
+## D. Firebase Authentication(v9)
+1. Import
+* firebase.ts -> fbase.ts 
+```javascript
+...
+import {getAuth} from "firebase/auth";
+...
+export const authService = getAuth();
+...
+```
+* App.tsx
+```javascript
+...
+import {authService} from "firebase";
+...
+const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
+...
+```
+* 만약 절대경로로 파일을 import 하고 싶다면 tsconfig.json에 아래 추가 ts는
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+```
+* 이후는 firebase site에서 프로젝트 authentication 설정. 간략하게 적음
+1. 파이어베이스 홈페이지 Get started
+2. 프로젝트 생성 및 클릭
+3. Authentication 클릭
+4. Sign-in-method에서 Sign-in-providers `Email/Password`, `Google`, `Git Hub` 추가
+5. Git Hub - Setting > Developer settings > OAuth Apps > App 생성 후 Client관련 정보로 추가
+
 <br/>
 
 - [React](/posts/React)

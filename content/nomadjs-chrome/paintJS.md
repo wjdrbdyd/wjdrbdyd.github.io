@@ -1,7 +1,7 @@
 ---
 emoji: 🧢
 title: "[JS] Javascript"
-date: '2022-01-22 01:00:00'
+date: '2022-02-16 02:00:00'
 author: 정굥
 tags: blog JavaScript
 categories: JS

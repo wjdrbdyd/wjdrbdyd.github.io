@@ -13,7 +13,7 @@ categories: Onboarding
   
 ### innerHTML vs textContent vs innerText
 * innerHTML은 HTML을 반환한다.
-* textContent는 <script>나 <style> 태그와 상관없이 해당 노드가 가지고 있는 텍스트 값을 그대로 가져온다.
+* textContent는 `<script>`나 `<style>` 태그와 상관없이 해당 노드가 가지고 있는 텍스트 값을 그대로 가져온다.
 * innterText는 사람이 읽을 수 있는 요소만 가져온다.
 <br/>
 
@@ -89,8 +89,8 @@ document.querySelector(".parent").querySelectorAll(".child").forEach((child) => 
 ## 회원가입시 간단한 유효성 검사
 * `<fieldset>` tag는 form요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용
 
-> 예제
-    form 구조
+> form 구조
+    form
       fieldset
         label
         input
@@ -121,7 +121,6 @@ document.querySelector(".parent").querySelectorAll(".child").forEach((child) => 
 <script src="script.js"></script>
 ```
 * javascript
-* 아이디는 keyup event, 비밀번호는 blur event사용
 ```javascript
 const elInputUserId = document.querySelector("#userId");
 const elInputUserPwd = document.querySelector("#userPwd");
